@@ -13,6 +13,12 @@ gulp.task('htmlInject', () => {
     .pipe(gulp.dest('./temp/'));
 })
 
+
+gulp.task('deleteTempFolder', () => {
+  return del('./temp');
+});
+
+
 gulp.task('watch', () => {
   
   browserSync.init({
@@ -22,9 +28,10 @@ gulp.task('watch', () => {
     }
   });
 
+  // gulp.start('deleteTempFolder');
   gulp.start('htmlInject');
   gulp.start('cssInject');
-  gulp.start('htmlImages');
+  gulp.start('imagesInject');
 
   watch('./app/index.html', () => {
     gulp.start('htmlInject');

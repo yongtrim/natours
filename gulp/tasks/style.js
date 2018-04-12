@@ -8,8 +8,8 @@ var sass = require('gulp-sass');
 gulp.task('styles', () => {
   return gulp.src('./app/assets/styles/styles.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gap.prependFile('./node_modules/normalize.css/normalize.css'))
+    // .pipe(gap.prependFile('./node_modules/normalize.css/normalize.css'))
     .pipe(postcss([autoprefixer]))
-    .pipe(gulp.dest('./temp'));
+    .pipe(gulp.dest('./temp/styles/'));
 });
 
