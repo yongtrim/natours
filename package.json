@@ -1,0 +1,32 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "This is self project.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yongtrim/natours.git"
+  },
+  "author": "syyoon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yongtrim/natours/issues"
+  },
+  "homepage": "https://github.com/yongtrim/natours#readme",
+  "devDependencies": {
+    "autoprefixer": "^8.2.0",
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-append-prepend": "^1.0.4",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-watch": "^5.0.0",
+    "normalize.css": "^8.0.0"
+  }
+}
